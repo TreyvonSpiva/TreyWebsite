@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Oswald:wght@400;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+background: #000;
+color: #fff;
+font-family: 'Space Mono', monospace;
+position: relative;
+}
+
+.grain {
+pointer-events: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+opacity: 0.05;
+z-index: 999;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 50px 80px;
+position: relative;
+z-index: 2;
+}
+
+h1 {
+font-family: 'Oswald', sans-serif;
+font-size: 22px;
+letter-spacing: 3px;
+}
+
+nav a {
+margin-left: 40px;
+text-decoration: none;
+color: #888;
+font-size: 13px;
+letter-spacing: 2px;
+transition: 0.3s ease;
+}
+
+nav a:hover { color: #fff; }
+
+.vertical-feed {
+padding: 80px;
+max-width: 900px;
+margin: auto;
+position: relative;
+z-index: 2;
+}
+
+.video-block {
+margin-bottom: 120px;
+}
+
+.video-thumb {
+width: 100%;
+height: 520px;
+background-size: cover;
+background-position: center;
+filter: brightness(0.9);
+transition: 0.5s ease;
+}
+
+.video-thumb:hover {
+filter: brightness(1);
+transform: scale(1.01);
+}
+
+.video-block h2 {
+font-family: 'Oswald', sans-serif;
+font-size: 26px;
+letter-spacing: 3px;
+margin-top: 20px;
+}
+
+.video-block p {
+color: #aaa;
+letter-spacing: 2px;
+font-size: 12px;
+margin-top: 6px;
+}
+
+.content {
+padding: 120px 80px;
+max-width: 700px;
+margin: auto;
+position: relative;
+z-index: 2;
+}
+
+.content h2 {
+font-family: 'Oswald', sans-serif;
+font-size: 42px;
+letter-spacing: 4px;
+margin-bottom: 40px;
+}
+
+.content p {
+color: #fff;
+font-size: 14px;
+line-height: 1.8;
+}
+
+footer {
+padding: 40px 80px;
+border-top: 1px solid #111;
+color: #555;
+font-size: 12px;
+letter-spacing: 1px;
+position: relative;
+z-index: 2;
+}
